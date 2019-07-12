@@ -5,9 +5,7 @@ import kotlin.collections.HashSet
 
 /**
  *
- * Student note: You should not have to edit this file at all, although you're encouraged
- * to grok it and try to understand what's happening
- *
+ * Steps to complete the Android challenge are listed inline below
  */
 
 class Game(dictionaryOfWords: List<String>) {
