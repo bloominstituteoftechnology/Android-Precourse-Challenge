@@ -67,7 +67,7 @@ Download the starter Android project [here](https://github.com/LambdaSchool/Andr
 
 You'll be writing the necessary code to complete a simple [Hangman game](https://en.wikipedia.org/wiki/Hangman_(game)). The file you'll be editing is `Game.kt`, and you'll need to complete the following steps: 
 
-**Note: The project will not build or run until you complete the following steps.**
+**Note: The project will not build or run until you complete the following steps**
 1. First, you'll need to write is the `makeGuess(c: Char) : Pair<String, Boolean>` method. This method will allow the user to make a guess with a single `Character`, and will return two values (a `Pair`) that represent the masked or incomplete word (ie: `l_mbd_`) and a Boolean (true/false) for whether or not they have won. Some of the code for this method has been written for you -- you'll learn more about the Kotlin-specific data types like `Pair` and `Triple` later in the course. 
 2. Complete the method that returns the list of guessed letters - `getUsedLetters() : HashSet<Char>`
 3. Write the method that returns the word to be guessed - `getWordToGuess() : String`
