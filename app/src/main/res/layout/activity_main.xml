@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+    <TextView
+            android:id="@+id/word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textIsSelectable="false"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="@string/word"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/guesses"
+            app:layout_constraintVertical_bias="0.8"/>
+
+    <TextView
+            android:id="@+id/guesses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textIsSelectable="false"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="@string/guessed_letters"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/lives"
+            app:layout_constraintVertical_bias=".8"/>
+
+    <TextView
+            android:id="@+id/lives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textIsSelectable="false"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="@string/remaining_lives"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/letter"
+            app:layout_constraintVertical_bias=".8"/>
+
+    <EditText
+            android:id="@+id/letter"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="100sp"
+            android:textIsSelectable="false"
+            android:gravity="center_horizontal"
+            android:cursorVisible="false"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:inputType="textCapCharacters|textVisiblePassword|textNoSuggestions"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:onClick="handleLetterClicked"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"/>
+
+    <android.support.v7.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:text="@string/guess_letter"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="handleGuessClicked"
+            app:layout_constraintTop_toBottomOf="@id/letter"
+            app:layout_constraintEnd_toEndOf="@id/letter"
+            app:layout_constraintStart_toStartOf="@id/letter"/>
+
+</android.support.constraint.ConstraintLayout>
