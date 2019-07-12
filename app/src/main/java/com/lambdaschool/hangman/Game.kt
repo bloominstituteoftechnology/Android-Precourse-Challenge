@@ -3,7 +3,16 @@ package com.lambdaschool.hangman
 import java.util.*
 import kotlin.collections.HashSet
 
+/**
+ *
+ * Student note: You should not have to edit this file at all, although you're encouraged
+ * to grok it and try to understand what's happening
+ *
+ */
+
 class Game(dictionaryOfWords: List<String>) {
+    // Student note: We'll learn about the HashSet later on in the Android course. For now, you can think of a HashSet
+    // like an ArrayList of unique values. ArrayList lets you add multiple identical values, but a HashSet does not.
     private var guessedCharacters = HashSet<Char>()
     private var numberOfLives = 8
     private var words = dictionaryOfWords
@@ -17,11 +26,15 @@ class Game(dictionaryOfWords: List<String>) {
     }
 
     fun makeGuess(guess: Char) : Pair<String, Boolean> {
-        guessedCharacters.add(guess.toLowerCase())
-
-        if(!wordToGuess.contains(guess, true) && numberOfLives > 0) {
-            numberOfLives--
-        }
+        // Step 1:
+        // -------
+        // turn the following steps into Kotlin:
+        //
+        // 1. add the player's guess to the list of guessedCharacters
+        // 2. if the wordToGuess does not contain their guess && the number of lives is > 0, then decrement
+        // the number of lives remaining (they lost one life)
+        // 3. return a Kotlin `Pair<String, Boolean>` for the player's masked word and whether or not they've won
+        // A masked word is like l_mbd_ - it shows the missing letters from the player's guesses
 
         var maskedWord = ""
 
@@ -37,22 +50,33 @@ class Game(dictionaryOfWords: List<String>) {
     }
 
     fun getUsedLetters() : HashSet<Char> {
-        return guessedCharacters
+        // Step 2:
+        // -------
+        // return the HashSet of guessed characters
     }
 
     fun getWordToGuess() : String {
-        return wordToGuess
+        // Step 3:
+        // -------
+        // return the word to be guessed that was set during the `initializeGame()` method
     }
 
     fun isGameOver() : Boolean {
-        return numberOfLives == 0
+        // Step 4:
+        // -------
+        // return a boolean that's true if the player has 0 lives remaining, otherwise
+        // false
     }
 
     private fun isCorrectGuess(c: Char): Char {
-        return when (guessedCharacters.contains(c.toLowerCase())) {
-            true -> c
-            false -> '_'
-        }
+        // Step 5:
+        // -------
+        // turn the following pseudocode into Kotlin:
+        //
+        // if the list of guessed characters contains c (ie: the guess is correct)
+        //   return c
+        // else
+        //    return '_'
     }
 
     private fun hasWon() : Boolean {

@@ -12,7 +12,6 @@ import kotlinx.android.synthetic.main.activity_main.*
  * to grok it and try to understand what's happening
  *
  */
-
 class MainActivity : AppCompatActivity() {
     lateinit var game: Game
 
@@ -20,7 +19,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Create an instance of the Game object with a list of words for the player to guess
         game = Game(arrayListOf("lambda", "school", "android", "precourse", "hyrule", "triforce"))
+
+        // Set up the game UI when the screen first loads (onCreate)
         initializeGameUI()
     }
 
@@ -40,13 +42,16 @@ class MainActivity : AppCompatActivity() {
 
     // Handle the guess button being clicked
     fun handleGuessClicked(view: View) {
+        // validate that the user entered a letter
         if(letter.text.isNullOrEmpty())
             return
 
+        // pass the guessed character (single) to our game engine, and receive a "masked" word and boolean
+        // flag for whether or not they won the game in return
         val (maskedWord, won) = game.makeGuess(letter.text.toString().single())
         word.text = getString(R.string.word, maskedWord)
 
-        // If the game was won, display a message notifying the user, and let them try again
+        // If the game was won, display a message notifying the user and let them try again
         if(won) {
             val snackbar = Snackbar.make(view, R.string.winner_message, Snackbar.LENGTH_INDEFINITE)
             snackbar.setAction(R.string.try_again) {
