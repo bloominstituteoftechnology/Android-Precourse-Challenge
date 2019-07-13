@@ -80,7 +80,7 @@ The code in Game.kt is also commented with detailed instructions. You should not
 **Please be sure to read all of the instructions.**  
 
 ## Finishing Up
-When you've finished, send an email to [karen@lambdaschool.com](mailto:karen@lambdaschool.com)
+When you've finished, **zip up your work folder** and send it in an email to [justin@lambdaschool.com](mailto:justin@lambdaschool.com)
 
 ## Resources
 [Lambda's Intro to Android Curriculum](https://learn.lambdaschool.com/and-pre/sprint/recxcgsftw66rq9io) - Curriculum material, including videos for Lambda's Intro to Android course. Covers everything you need to know for this challenge.
