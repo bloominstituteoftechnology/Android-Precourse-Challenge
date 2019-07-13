@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lambda Hangman</string>
+    <string name="guess_letter">Guess</string>
+    <string name="retry">RETRY</string>
+    <string name="try_again">TRY AGAIN</string>
+    <string name="guessed_letters">Guesses: %s</string>
+    <string name="word">%s</string>
+    <string name="remaining_lives">%s guesses left</string>
+    <string name="winner_message">Congratulations, you won!</string>
+    <string name="loser_message">You lost! The word was \"%s\".</string>
+</resources>
