@@ -1,8 +1,8 @@
 # Android Precourse Challenge
 In order to remove even more barriers for those that want to participate in Lambda School, we've created the Lambda Challenge. Based on our data, we are confident that if you can complete the Lambda Challenge, we can help you learn to code, and get a job as an Android developer.
 
-If the questions in here are too difficult then you can begin working through our regular precourse work which covers the fundamentals [here](https://lambdaschool.com/courses/cs/android/intro/).
-You should also complete an application for our full Android course if you have not already done so. Apply [here](https://lambdaschool.typeform.com/to/AfQGR6).
+If the questions in here are too difficult then you can begin working through our precourse work which covers the fundamentals [here](apply.lambdaschool.com).
+You should also complete an application for our full Android course if you have not already done so. Apply [here](apply.lambdaschool.com).
 ## Prerequisites
 In order to complete this challenge you will need a basic understanding of the following concepts:
 
