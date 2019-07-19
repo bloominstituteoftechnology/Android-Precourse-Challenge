@@ -80,7 +80,7 @@ The code in Game.kt is also commented with detailed instructions. You should not
 **Please be sure to read all of the instructions.**  
 
 ## Finishing Up
-When you've finished, **zip up your work folder** and send it in an email to [justin@lambdaschool.com](mailto:justin@lambdaschool.com)
+When you've finished, **zip up your work folder** and send it in an email to [justin@lambdaschool.com](mailto:justin@lambdaschool.com). **Note:** Gmail's virus filter might prevent you from submitting a Zip. If this happens to you, please copy the Zip file into Google Drive and send the shared link to [justin@lambdaschool.com](mailto:justin@lambdaschool.com). 
 
 ## Resources
 [Lambda's Intro to Android Curriculum](https://learn.lambdaschool.com/and-pre/sprint/recxcgsftw66rq9io) - Curriculum material, including videos for Lambda's Intro to Android course. Covers everything you need to know for this challenge.
